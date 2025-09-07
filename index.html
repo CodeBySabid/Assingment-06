@@ -4,16 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Green Earth</title>
     <!-- Tailwind and DaisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-
+    <!-- css lin -->
     <link rel="stylesheet" href="style.css">
-
-
-
 </head>
 
 <body class="flex flex-col justify-start items-center">
@@ -35,12 +31,41 @@
         <div class="header-bottom w-[100%] h-[78%] flex justify-center items-center">
             <div class="flex flex-col items-center gap-3 max-sm:gap-1 max-sm:p-3 text-center">
                 <h1 class="text-5xl font-bold max-sm:text-2xl">Plant a Tree, Grow a Future</h1>
-                <p class="text-base/5 p-2">Join our mission to plant 1 million trees and make the Earth greener for future <br class="max-sm:hidden">
+                <p class="text-base/5 p-2">Join our mission to plant 1 million trees and make the Earth greener for
+                    future <br class="max-sm:hidden">
                     generations.</p>
-                <button class="bg-[#FACC15] rounded-2xl w-[131px] p-2 text-[#15803D] cursor-pointer max-sm:p-1 max-sm:mt-1">Get Involved</button>
+                <button
+                    class="bg-[#FACC15] rounded-2xl w-[131px] p-2 text-[#15803D] cursor-pointer max-sm:p-1 max-sm:mt-1">Get
+                    Involved</button>
             </div>
         </div>
     </header>
+    <main class="w-[1920px] h-auto pl-28 pr-28 pt-20 max-sm:w-[100%] max-sm:h-auto max-sm:px-4 max-sm:pt-10 bg-[#F0FDF4]">
+        <h1 class="text-3xl text-center font-bold mb-5">Choose Your Trees</h1>
+        <section>
+            <div class="main-card grid max-sm:grid-cols-1 w-[100%] h-auto gap-6 ">
+                <div class="w-[100%] h-auto">
+                    <h1 class="font-semibold mb-3">Categories</h1>
+                    <ul id="category-list" class="space-y-2">
+                        <li class="cursor-pointer p-2 rounded-xl bg-green-700 text-white" data-category="All Trees">
+                            All tress
+                        </li>
+                    </ul>
+                </div>
+                <div id="plants-container" class="card-no-2 w-[100%] h-auto grid grid-cols-3 gap-4">
+                </div>
+                <div class="w-[100%] h-auto bg-white p-4 rounded shadow">
+                    <h1 class="font-semibold mb-3">Your Cart</h1>
+                    <div id="cart-items"></div>
+                    <hr class="my-2">
+                    <div class="flex justify-between p-4 items-center">
+                        <h2 class="font-bold">Total:</h2>
+                        <p class="font-bold">ট <span id="total">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- javascript link -->
     <script src="./script.js"></script>
