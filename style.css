@@ -1,0 +1,14 @@
+.header-bottom{
+    background-image: url("./assets/hero-leaf1.png"), url("./assets/hero-leaf2.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+    background-size: 25%, 25%;
+}
+
+/* @media screen and (max-width: 425px){
+    .header-bottom{
+        width: 100%;
+        background-position: left top, right bottom;
+        background-size: 25%, 25%;
+    }
+} */

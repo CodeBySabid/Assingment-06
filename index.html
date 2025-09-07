@@ -1,14 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Tailwind and DaisyUI link -->
+    <!-- Tailwind and DaisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+
 </head>
-<body>
+
+<body class="flex flex-col justify-start items-center">
+    <header class="w-[1920px] h-[474px] max-sm:w-[100%] max-sm:h-auto bg-[#CFF0DC]">
+        <div
+            class="w-[100%] h-[22%] bg-[#15803D] flex justify-between items-center pl-28 pr-28 max-sm:flex-col max-sm:p-0 max-sm:h-auto max-sm:p-3 gap-2">
+            <a href="#" class="text-white text-xl">Green Earth</a>
+            <nav>
+                <ul class="flex gap-5 text-white">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Plant a Tree</a></li>
+                </ul>
+            </nav>
+            <button
+                class="bg-[#FACC15] rounded-2xl w-[131px] p-2 text-[#15803D] cursor-pointer max-sm:p-1 max-sm:mt-1">Plant
+                a Tree</button>
+        </div>
+        <div class="header-bottom w-[100%] h-[78%] flex justify-center items-center">
+            <div class="flex flex-col items-center gap-3 max-sm:gap-1 max-sm:p-3 text-center">
+                <h1 class="text-5xl font-bold max-sm:text-2xl">Plant a Tree, Grow a Future</h1>
+                <p class="text-base/5 p-2">Join our mission to plant 1 million trees and make the Earth greener for future <br class="max-sm:hidden">
+                    generations.</p>
+                <button class="bg-[#FACC15] rounded-2xl w-[131px] p-2 text-[#15803D] cursor-pointer max-sm:p-1 max-sm:mt-1">Get Involved</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- javascript link -->
     <script src="./script.js"></script>
 </body>
+
 </html>
