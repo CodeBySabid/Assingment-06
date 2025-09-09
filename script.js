@@ -4,6 +4,7 @@ const plantsContainer = document.getElementById("plants-container");
 const categoryList = document.getElementById("category-list");
 const cartItems = document.getElementById("cart-items");
 const totalPrice = document.getElementById("total");
+const createdModal = document.getElementById("modal-div")
 
 let plants = [];
 let categories = [];
