@@ -31,7 +31,23 @@ async function loadCategories() {
 }
 
 
+function modal(plant) {
+    createdModal.innerHTML = `
+      <div class="bg-white max-sm:w-[90%] rounded w-[30%] h-auto py-8 px-5 relative">
+        <h1 class="font-bold text-2xl mb-4">${plant.name}</h1>
+        <img src="${plant.image}" alt="${plant.name}" class="w-full h-[200px] object-cover rounded">
+        <h1 class="font-bold text-lg my-2">Category: ${plant.category}</h1>
+        <h2 class="font-bold text-lg mb-2">Price: ট ${plant.price}</h2>
+        <p class="text-gray-700 mb-4">${plant.description}</p>
+        <button id="modal-close-button" class="relative right-0 btn px-4 py-2 rounded">Close</button>
+      </div>
+    `;
+    createdModal.classList.remove("hidden");
 
+    document.getElementById("modal-close-button").addEventListener("click", () => {
+        createdModal.classList.add("hidden");
+    });
+}
 
 
 function renderPlants(plantsDate) {
@@ -51,6 +67,9 @@ function renderPlants(plantsDate) {
             </button>
         </div>
         `;
+        card.querySelector("h1").addEventListener("click", () => {
+            modal(plant);
+        });
         const btn = card.querySelector("button");
         btn.addEventListener('click', () => {
             alert (`${plant.name} has been added to the card`)
